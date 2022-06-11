@@ -429,7 +429,7 @@ border-radius: 0px 0px 4px 4px;
 .clients-item {
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icon-color);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -437,20 +437,24 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .clients-link {
-    display: block;
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .clients-icon {
-    fill: var(--text-second-color);
+    fill: var(--icon-color);
 }
 
 .clients-item:hover,
-.clients-item:focus {
+.clients-link:focus .clients-item {
     border: 1px solid var(--accent-color)
 }
 
-.clients-link:hover .clients-icon,
+.clients-item:hover .clients-icon,
 .clients-link:focus .clients-icon {
     fill:var(--accent-color)
 }
@@ -548,7 +552,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-soc-icon {
-    fill: var(--icon-color);
+    fill: var(--text-light)
 }
 
 /* --------------------------------PORTFOLIO------------------------------------- */
